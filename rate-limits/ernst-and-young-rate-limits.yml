@@ -1,0 +1,54 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Ernst & Young (EY)
+providerId: ernst-and-young
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Professional Services
+  - Big Four
+  - Consulting
+  - Rate Limiting
+description: >-
+  Ernst & Young (EY) does not publish a public developer API, so no
+  public rate limits exist at the corporate level. Throughput, SLAs,
+  and concurrency on any EY-built API — whether embedded inside an
+  EY Nexus deployment, an EY.ai-backed delivery, an EY Managed
+  Services arrangement, or a client-bespoke integration — are
+  negotiated bilaterally and owned by the client or the engagement
+  contract.
+notes: >-
+  No public developer API — placeholder only. The open-source
+  Nightfall, Starlight, and supporting libraries published under
+  github.com/EYBlockchain are downstream-deployable artifacts, not
+  hosted services with provider-enforced limits.
+sources:
+  - https://www.ey.com/en_gl
+  - https://blockchain.ey.com
+  - https://github.com/EYBlockchain
+responseCodes:
+  throttled: 429
+limits:
+  - name: No public rate limits
+    scope: account
+    metric: not_applicable
+    limit: not applicable
+policies:
+  - name: Engagement-defined
+    description: >-
+      Throughput, concurrency, and SLAs on any EY-built API are
+      defined inside the client engagement contract, the relevant
+      managed-services agreement, or the EY Nexus / EY.ai deployment
+      contract — not by a public developer-portal policy.
+  - name: Self-deployed (open source)
+    description: >-
+      EY's published open-source blockchain projects (Nightfall_3,
+      Nightfall_4 CE, Starlight, Timber, supporting ZK libraries) are
+      deployed and operated by downstream consumers; any throughput
+      limits are a property of the consumer's chosen chain, infra,
+      and node operator, not of EY as a provider.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

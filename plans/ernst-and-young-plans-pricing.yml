@@ -1,0 +1,153 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Ernst & Young (EY)
+providerId: ernst-and-young
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Professional Services
+  - Big Four
+  - Consulting
+  - Assurance
+  - Tax
+  - Law
+  - Managed Services
+description: >-
+  Ernst & Young (EY) is a Big Four professional services organization.
+  It does not publish a public developer API, developer portal, or
+  consumer-facing API pricing surface at the global corporate level.
+  Commercial engagements are priced as Assurance, Consulting, Strategy
+  & Transactions (EY-Parthenon), Tax, Law, Technology, Managed
+  Services, or People & Workforce contracts negotiated bilaterally
+  through the relevant EY member firm. EY-built APIs delivered as part
+  of a client engagement, an EY Nexus deployment, or an EY Managed
+  Services arrangement live with the client and are not priced as a
+  public API plan. Research outputs (EY Insights articles, CEO
+  Outlook, EY Megatrends, Global IPO Trends, the Private Equity Pulse,
+  Work Reimagined, the Climate Action Barometer, the Nature Action
+  Barometer, EY Podcasts, EY Webcasts) are free to readers, and EY's
+  open-source blockchain artifacts (Nightfall family, Starlight,
+  Timber, halo2-lib, snark-verifier, ZoKrates wrappers) are released
+  publicly with no commercial pricing surface.
+notes: >-
+  No public developer API — placeholder only. Pricing is engagement-
+  based and not consumable through an API plan. Free research access
+  and open-source blockchain releases are documented as separate plan
+  tiers purely for inventory purposes.
+sources:
+  - https://www.ey.com/en_gl
+  - https://www.ey.com/en_gl/services
+  - https://www.ey.com/en_gl/insights
+  - https://blockchain.ey.com
+  - https://github.com/EYBlockchain
+plans:
+  - id: ey-engagement
+    name: Member-Firm Professional Services Engagement
+    type: enterprise
+    description: >-
+      EY sells Assurance, Consulting, Strategy & Transactions
+      (EY-Parthenon), Tax, Law, Technology, Managed Services, and
+      People & Workforce work through bilateral engagement contracts
+      negotiated with the relevant member firm. EY Nexus, EY Studio+,
+      and EY.ai delivery are wrapped inside those engagement contracts.
+      There is no public API plan; pricing is set per engagement on a
+      time-and-materials, fixed-fee, or managed-services-subscription
+      basis.
+    entries:
+      - label: Engagement contract
+        name: engagement_contract
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: global
+        unit: 1
+        price: contact EY member firm account team
+        userMultiplied: false
+    elements:
+      - name: Assurance engagements
+      - name: Consulting engagements
+      - name: Strategy and Transactions / EY-Parthenon engagements
+      - name: Tax engagements
+      - name: Law engagements
+      - name: Technology engagements (including EY.ai and EY Nexus)
+      - name: Managed Services engagements
+      - name: People and Workforce engagements
+      - name: EY Private engagements
+      - name: EY Sustainability engagements
+      - name: No public developer API
+
+  - id: ey-insights
+    name: EY Insights Research Access
+    type: free
+    description: >-
+      Free reader access to EY Insights research across AI, Finance /
+      CFO Agenda, Geostrategy, People and Workforce, Risk,
+      Sustainability, Technology, and EY Transformation, including
+      flagship recurring series — CEO Outlook, EY Megatrends, Global
+      IPO Trends, the Private Equity Pulse, Work Reimagined, the
+      Climate Action Barometer, and the Nature Action Barometer — plus
+      EY Podcasts and EY Webcasts.
+    entries:
+      - label: Public research access
+        name: insights_access
+        type: free
+        metric: report
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 0
+        userMultiplied: false
+    elements:
+      - name: EY Insights articles and reports
+      - name: CEO Outlook
+      - name: EY Megatrends
+      - name: Global IPO Trends
+      - name: Private Equity Pulse
+      - name: Work Reimagined
+      - name: Climate Action Barometer
+      - name: Nature Action Barometer
+      - name: EY Podcasts
+      - name: EY Webcasts
+
+  - id: ey-blockchain-oss
+    name: EY Blockchain Open Source
+    type: free
+    description: >-
+      EY's open-source blockchain artifacts under github.com/EYBlockchain
+      are released free of charge under their respective open-source
+      licenses. This includes the Nightfall family (Nightfall_3 in
+      JavaScript, Nightfall_4 Community Edition in Rust, Nightfall_4
+      Starknet, Nightfish CE, midfall) and supporting libraries
+      (Starlight, Timber, halo2-lib, snark-verifier, plonkish,
+      algebra, ZoKrates wrappers, Poseidon-Solidity, Baseline,
+      zk-swap-* libraries). There is no commercial pricing or
+      subscription tier; downstream integrations are governed by the
+      individual repository licenses.
+    entries:
+      - label: Open-source download / fork
+        name: oss_artifact
+        type: free
+        metric: repository
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: 0
+        userMultiplied: false
+    elements:
+      - name: Nightfall_3 (JavaScript optimistic ZK rollup)
+      - name: Nightfall_4 Community Edition (Rust)
+      - name: Nightfall_4 Starknet
+      - name: Starlight (Solidity-to-zApp transpiler)
+      - name: Timber (Ethereum-log Merkle tree)
+      - name: halo2-lib / snark-verifier / plonkish / algebra
+      - name: ZoKrates wrappers
+      - name: Poseidon-Solidity
+      - name: Baseline Protocol contributions
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

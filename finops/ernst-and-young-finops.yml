@@ -1,0 +1,93 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Ernst & Young (EY)
+providerId: ernst-and-young
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Professional Services
+  - Big Four
+  - Consulting
+  - FinOps
+  - FOCUS
+description: >-
+  Ernst & Young (EY) has no public developer API and no metered
+  billing surface. Costs flow through Assurance, Consulting, Strategy
+  & Transactions (EY-Parthenon), Tax, Law, Technology, Managed
+  Services, and People & Workforce engagement contracts and appear
+  on client books as professional-services spend, not as a metered
+  API invoice. EY itself runs FinOps and cloud financial-management
+  advisory practices for clients on hyperscaler spend (frequently
+  delivered through EY.ai-backed automations and EY Ecosystem alliances
+  with Microsoft, AWS, Google Cloud, Oracle, SAP, and ServiceNow),
+  but does not consume FinOps for its own corporate offerings.
+notes: >-
+  No public developer API — placeholder only. EY's FinOps practice is
+  an advisory offering, not a billed EY API product. The open-source
+  EY Blockchain releases (Nightfall, Starlight, etc.) carry no EY
+  billing line at all; downstream operators bear chain, node, and
+  infra cost directly.
+sources:
+  - https://www.ey.com/en_gl
+  - https://www.ey.com/en_gl/services
+  - https://blockchain.ey.com
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Ernst & Young Global Limited
+serviceCategory: Professional Services
+billingModel:
+  pricingCategory: Contract
+  billingFrequency: Per-Invoice
+  billingCurrency: USD
+  chargeCategories:
+    - Purchase
+focusColumns:
+  ServiceName: EY Engagement
+  ServiceCategory: Professional Services
+  ProviderName: Ernst & Young (EY)
+  PublisherName: Ernst & Young Global Limited
+  InvoiceIssuerName: EY Member Firm
+  BillingCurrency: USD
+meters:
+  - name: engagement_contract
+    description: >-
+      Master engagement contract — not a metered unit; costs flow
+      through time-and-materials, fixed-fee, or
+      managed-services-subscription invoicing from the relevant EY
+      member firm.
+    unit: contract
+    aggregation: count
+    dimensions:
+      - client
+      - member_firm
+      - service_line
+principles:
+  - name: Visibility
+    description: >-
+      Track EY cost as professional-services spend on the client GL,
+      not as a metered API line.
+  - name: Allocation
+    description: >-
+      Allocate engagement cost to the sponsoring business unit;
+      pass-through hyperscaler costs incurred during an EY Managed
+      Services arrangement or an EY.ai-backed delivery should be
+      allocated through the underlying cloud bill rather than the EY
+      invoice.
+  - name: Optimization
+    description: >-
+      Optimize by aligning engagement scope with the FinOps practices
+      EY itself advises clients to adopt on hyperscaler workloads,
+      ensuring scope-creep does not erode engagement value.
+  - name: Accountability
+    description: >-
+      Engagement sponsor on the client side and the EY engagement
+      partner share accountability for cost and value delivered.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

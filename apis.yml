@@ -1,0 +1,177 @@
+aid: ernst-and-young
+name: Ernst & Young (EY)
+description: >-
+  Ernst & Young (EY) is one of the Big Four professional services
+  organizations, operating as a global network of member firms branded
+  under "EY" and coordinated by Ernst & Young Global Limited (EYG). EY
+  reports a workforce of roughly 400,000 people spanning approximately
+  150 countries. The firm's stated purpose is "Building a better working
+  world" and it organizes delivery across a small set of professional
+  service lines — Assurance, Consulting, Strategy & Transactions
+  (branded as EY-Parthenon, covering both Strategy and Transactions and
+  Corporate Finance), Tax, Law, Technology, Managed Services, and
+  People & Workforce Services — plus EY Private (services for
+  privately-held and entrepreneur-led businesses) and EY Sustainability.
+  Industry coverage is organized into eight sectors: Industrials &
+  Mobility, Consumer Products & Retail, Energy & Resources, Financial
+  Services, Government & Infrastructure, Health & Life Sciences,
+  Private Equity, and Technology, Media & Telecommunications.
+  EY's flagship technology initiative is EY.ai, positioned as an
+  enterprise-scale "agentic AI unifying platform" backed by alliances
+  with NVIDIA, Microsoft, IBM, SAP, ServiceNow and others. Adjacent
+  platform brands include EY Nexus (a sector-tailored business
+  transformation platform marketed primarily to financial services),
+  EY Studio+ (customer experience / growth), EY Ecosystems
+  (partnership network), and EY wavespace (innovation centers).
+  EY's research-publishing surface is the EY Insights portfolio,
+  organized around topic areas (AI, Finance, Geostrategy, People and
+  Workforce, Risk, Sustainability, Technology, EY Transformation) and
+  flagship recurring series including the CEO Outlook, EY Megatrends,
+  Global IPO Trends, the Private Equity Pulse, Work Reimagined, the
+  Climate Action Barometer, and the Nature Action Barometer, plus
+  EY Podcasts and EY Webcasts. Project Everest — the proposed split
+  of EY's audit and consulting businesses — was publicly cancelled in
+  April 2023, and EY continues to operate as an integrated multi-line
+  professional services organization. EY does not publish a public
+  developer portal, OpenAPI specifications, public REST APIs, or a
+  consumer-facing API pricing surface at the global corporate level.
+  The only first-party EY GitHub organization that is publicly
+  discoverable is EYBlockchain (github.com/EYBlockchain, ~28 public
+  repositories, ~160 followers, blog URL blockchain.ey.com), which
+  hosts EY's open-source zero-knowledge cryptography and
+  privacy-preserving blockchain work, anchored by the Nightfall
+  optimistic-rollup family (Nightfall_3 in JavaScript / Nightfall_4
+  Community Edition in Rust) and the Starlight Solidity-to-zApp
+  transpiler, alongside supporting libraries such as Timber, Poseidon,
+  halo2-lib, snark-verifier, plonkish, algebra, and ZoKrates wrappers,
+  plus product brands EY Blockchain Analyzer (Reconciler and Smart
+  Contract & Token Review) and the EY OpsChain Suite (Traceability,
+  ESG, Contract Manager).
+kind: company
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Professional Services
+  - Big Four
+  - Consulting
+  - Assurance
+  - Audit
+  - Tax
+  - Law
+  - Strategy
+  - Transactions
+  - Corporate Finance
+  - Technology
+  - Managed Services
+  - People And Workforce
+  - Sustainability
+  - ESG
+  - Risk
+  - AI
+  - Agentic AI
+  - Blockchain
+  - Zero Knowledge Proofs
+  - Privacy
+  - Insights
+  - Research
+  - Industry Analysis
+url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.ey.com/en_gl
+  - type: About
+    url: https://www.ey.com/en_gl/about-us
+  - type: Services
+    url: https://www.ey.com/en_gl/services
+  - type: Industries
+    url: https://www.ey.com/en_gl/industries
+  - type: KnowledgeCenter
+    name: EY Insights
+    url: https://www.ey.com/en_gl/insights
+  - type: Hub
+    name: EY.ai
+    url: https://www.ey.com/en_gl/ai
+  - type: Hub
+    name: EY Blockchain
+    url: https://blockchain.ey.com
+  - type: Hub
+    name: EY Nexus
+    url: https://www.ey.com/en_gl/services/consulting
+  - type: Hub
+    name: EY-Parthenon
+    url: https://www.ey.com/en_gl/services/strategy-by-ey-parthenon
+  - type: Hub
+    name: EY Private
+    url: https://www.ey.com/en_gl/services/ey-private
+  - type: Hub
+    name: EY Sustainability
+    url: https://www.ey.com/en_gl/services/sustainability
+  - type: Hub
+    name: EY Law
+    url: https://www.ey.com/en_gl/services/law
+  - type: Hub
+    name: EY Managed Services
+    url: https://www.ey.com/en_gl/services/managed-services
+  - type: Newsroom
+    url: https://www.ey.com/en_gl/newsroom
+  - type: Podcasts
+    name: EY Podcasts
+    url: https://www.ey.com/en_gl/insights/podcasts
+  - type: Webinars
+    name: EY Webcasts
+    url: https://www.ey.com/en_gl/insights/webcasts
+  - type: Careers
+    url: https://www.ey.com/en_gl/careers
+  - type: GitHubOrganization
+    name: EY Blockchain
+    url: https://github.com/EYBlockchain
+  - type: GitHubRepository
+    name: Nightfall_3 (Optimistic ZK Rollup)
+    url: https://github.com/EYBlockchain/nightfall_3
+  - type: GitHubRepository
+    name: Nightfall_4_CE (Rust)
+    url: https://github.com/EYBlockchain/nightfall_4_CE
+  - type: GitHubRepository
+    name: Starlight (Solidity to zApp transpiler)
+    url: https://github.com/EYBlockchain/starlight
+  - type: GitHubRepository
+    name: Timber (Merkle tree from Ethereum logs)
+    url: https://github.com/EYBlockchain/timber
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ernstandyoung
+  - type: X
+    url: https://x.com/EYnews
+  - type: YouTube
+    name: EY Global
+    url: https://www.youtube.com/@ey_global
+  - type: Legal
+    url: https://www.ey.com/en_gl/legal-and-privacy/legal-statement
+  - type: PrivacyPolicy
+    url: https://www.ey.com/en_gl/legal-and-privacy/privacy-statement
+  - type: TermsOfService
+    name: Cookie Policy
+    url: https://www.ey.com/en_gl/legal-and-privacy/cookie-policy
+  - type: Compliance
+    name: Global Code of Conduct
+    url: https://www.ey.com/en_gl/about-us/global-code-of-conduct
+  - type: Accessibility
+    url: https://www.ey.com/en_gl/legal-and-privacy/global-web-accessibility-statement
+  - type: Contact
+    url: https://www.ey.com/en_gl/contact-us
+properties:
+  - type: JSONLD
+    url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/json-ld/ernst-and-young-context.jsonld
+  - type: Vocabulary
+    url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/vocabulary/ernst-and-young-vocabulary.yml
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/plans/ernst-and-young-plans-pricing.yml
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/rate-limits/ernst-and-young-rate-limits.yml
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/ernst-and-young/refs/heads/main/finops/ernst-and-young-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

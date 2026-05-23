@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ey": "https://api-evangelist.com/vocab/ernst-and-young#",
+    "schema": "https://schema.org/",
+    "org": "http://www.w3.org/ns/org#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Organization": "schema:Organization",
+    "MemberFirm": "ey:MemberFirm",
+    "ServiceLine": "ey:ServiceLine",
+    "Practice": "ey:Practice",
+    "Industry": "schema:Industry",
+    "Sector": "ey:Sector",
+    "PlatformBrand": "ey:PlatformBrand",
+    "InsightTopic": "ey:InsightTopic",
+    "ReportSeries": "ey:ReportSeries",
+    "ResearchReport": "schema:Report",
+    "Webcast": "schema:BroadcastEvent",
+    "Podcast": "schema:PodcastSeries",
+    "Alliance": "ey:Alliance",
+    "Accelerator": "ey:Accelerator",
+    "BlockchainProtocol": "ey:BlockchainProtocol",
+    "ZeroKnowledgeRollup": "ey:ZeroKnowledgeRollup",
+    "OpenSourceProject": "ey:OpenSourceProject",
+
+    "id": "@id",
+    "type": "@type",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "logo": "schema:logo",
+    "founded": {
+      "@id": "schema:foundingDate",
+      "@type": "xsd:date"
+    },
+    "headquarters": "schema:address",
+    "country": "schema:addressCountry",
+    "region": "ey:region",
+
+    "parentOrganization": "schema:parentOrganization",
+    "memberOf": "org:memberOf",
+    "subOrganization": "schema:subOrganization",
+    "hasUnit": "org:hasUnit",
+    "serviceLine": "ey:serviceLine",
+    "practice": "ey:practice",
+    "industry": "ey:industry",
+    "sector": "ey:sector",
+    "platformBrand": "ey:platformBrand",
+
+    "published": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:date"
+    },
+    "author": "schema:author",
+    "publisher": "schema:publisher",
+    "topic": "schema:about",
+    "series": "ey:series",
+    "insightTopic": "ey:insightTopic",
+    "reportType": "ey:reportType",
+    "audience": "schema:audience",
+    "cadence": "ey:cadence",
+
+    "alliancePartner": "ey:alliancePartner",
+    "technologyStack": "ey:technologyStack",
+    "accelerator": "ey:accelerator",
+    "deployedOn": "ey:deployedOn",
+    "underlyingChain": "ey:underlyingChain",
+
+    "broader": "skos:broader",
+    "narrower": "skos:narrower",
+    "related": "skos:related",
+    "prefLabel": "skos:prefLabel",
+    "altLabel": "skos:altLabel"
+  }
+}

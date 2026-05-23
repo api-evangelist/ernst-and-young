@@ -1,0 +1,412 @@
+vocabulary:
+  name: Ernst & Young (EY) Vocabulary
+  description: >-
+    Domain vocabulary for Ernst & Young (EY), the Big Four professional
+    services organization. Covers organizational structure (member firms,
+    service lines), industry sectors, EY's platform brands (EY.ai,
+    EY Nexus, EY-Parthenon, EY Studio+, EY wavespace, EY Private,
+    EY Sustainability, EY Managed Services), the EY Insights research
+    surface, and EY's open-source blockchain footprint anchored by the
+    Nightfall optimistic-rollup family and the Starlight transpiler.
+    No public developer API surface exists at the corporate level;
+    this vocabulary models the institutional, research-publishing, and
+    open-source surfaces that are publicly discoverable.
+  version: '1.0'
+  created: '2026-05-23'
+  modified: '2026-05-23'
+
+organizational-concepts:
+  - term: EYG
+    definition: >-
+      Ernst & Young Global Limited — the UK private company limited by
+      guarantee that coordinates the global network of legally separate
+      and independent member firms operating under the EY brand. EYG
+      does not provide services to clients.
+    aliases:
+      - EY Global
+      - Ernst & Young Global
+    related:
+      - Member Firm
+      - Network
+
+  - term: Member Firm
+    definition: >-
+      A legally separate and independent legal entity that is part of
+      the EY global network and provides services to clients under the
+      EY brand. Each member firm is liable only for its own acts and
+      omissions.
+    related:
+      - EYG
+      - Network
+
+  - term: Service Line
+    definition: >-
+      One of EY's primary delivery surfaces — Assurance, Consulting,
+      Strategy & Transactions (EY-Parthenon), Tax, Law, Technology,
+      Managed Services, and People & Workforce Services — under which
+      client work is organized, staffed, and reported.
+    related:
+      - Practice
+      - Industry
+
+  - term: Industry
+    definition: >-
+      A vertical market EY serves. EY's industry coverage is organized
+      around eight sectors: Industrials & Mobility, Consumer Products
+      & Retail, Energy & Resources, Financial Services, Government &
+      Infrastructure, Health & Life Sciences, Private Equity, and
+      Technology, Media & Telecommunications.
+    related:
+      - Sector
+      - Service Line
+
+  - term: Project Everest
+    definition: >-
+      The internal codename for the proposed separation of EY's audit
+      and consulting businesses into two distinct organizations.
+      Publicly announced in 2022, the split plan was cancelled in
+      April 2023, and EY continues to operate as an integrated
+      multi-line professional services organization.
+    related:
+      - Service Line
+
+service-lines:
+  - term: Assurance
+    definition: >-
+      EY's audit and assurance service line covering financial-statement
+      audit, broader assurance services, and sustainability reporting
+      assurance. Stated purpose is "capital markets confidence and
+      sustainable value protection."
+    related:
+      - Service Line
+
+  - term: Consulting
+    definition: >-
+      EY's consulting service line spanning business transformation,
+      technology consulting, customer experience (EY Studio+),
+      financial-services transformation (EY Nexus), and people /
+      workforce transformation.
+    related:
+      - Service Line
+      - EY Nexus
+      - EY Studio+
+
+  - term: Strategy and Transactions
+    definition: >-
+      Branded as EY-Parthenon, EY's combined Strategy and Transactions
+      and Corporate Finance practice covering corporate strategy, value
+      creation, M&A advisory, divestitures, capital markets advisory,
+      and restructuring.
+    aliases:
+      - EY-Parthenon
+      - SaT
+    related:
+      - Service Line
+
+  - term: Tax
+    definition: >-
+      EY's tax service line, covering business tax, indirect tax,
+      international tax, M&A tax, tax technology and transformation,
+      transfer pricing, and the People Advisory Services / global
+      mobility tax franchise.
+    related:
+      - Service Line
+      - People and Workforce Services
+
+  - term: Law
+    definition: >-
+      EY Law — EY's global legal managed-services and advisory
+      practice — providing legal function transformation, contract
+      lifecycle, corporate / M&A law, and global compliance support.
+    related:
+      - Service Line
+
+  - term: Technology
+    definition: >-
+      EY's technology consulting service line, marketed as
+      "technology-driven organizational transformation," anchored by
+      EY.ai, EY Nexus, and EY's ecosystem alliances.
+    related:
+      - Service Line
+      - EY.ai
+      - EY Nexus
+
+  - term: Managed Services
+    definition: >-
+      EY's long-running outsourced delivery of non-core but
+      business-critical activities — finance, tax, risk, legal,
+      cybersecurity, and people operations — under multi-year
+      managed-services contracts.
+    related:
+      - Service Line
+
+  - term: People and Workforce Services
+    definition: >-
+      EY's workforce, mobility, reward, HR-transformation and
+      organizational-change practice, marketed as "unleashing human
+      potential."
+    related:
+      - Service Line
+      - Work Reimagined
+
+platform-brands:
+  - term: EY.ai
+    definition: >-
+      EY's enterprise-scale "agentic AI unifying platform," anchored by
+      EY's alliance investments with NVIDIA, Microsoft, IBM, SAP, and
+      ServiceNow, and used as the connective tissue for AI delivery
+      across the firm's service lines.
+    related:
+      - Platform Brand
+      - Alliance Partner
+
+  - term: EY Nexus
+    definition: >-
+      EY's sector-tailored business transformation platform, marketed
+      primarily into Financial Services, that combines pre-integrated
+      assets with EY Consulting delivery.
+    related:
+      - Platform Brand
+      - Consulting
+
+  - term: EY-Parthenon
+    definition: >-
+      EY's strategy and corporate-finance brand, encompassing both
+      Strategy and Transactions and Corporate Finance services.
+    related:
+      - Strategy and Transactions
+      - Platform Brand
+
+  - term: EY Studio+
+    definition: >-
+      EY's customer experience and growth services brand inside
+      Consulting, focused on design, customer journeys, and
+      revenue acceleration.
+    related:
+      - Consulting
+      - Platform Brand
+
+  - term: EY wavespace
+    definition: >-
+      EY's global network of innovation centers and labs used for
+      client co-creation, prototyping, and immersive sessions.
+    related:
+      - Platform Brand
+
+  - term: EY Ecosystems
+    definition: >-
+      EY's partnership network — the named alliances with hyperscalers,
+      enterprise software vendors, and AI infrastructure providers
+      (Microsoft, NVIDIA, IBM, SAP, ServiceNow, AWS, Google Cloud,
+      Oracle, Salesforce, and others) that EY co-delivers with.
+    related:
+      - Alliance Partner
+      - Platform Brand
+
+  - term: EY Private
+    definition: >-
+      EY's cross-service-line practice serving privately held and
+      entrepreneur-led businesses, including family enterprises and
+      mid-market private-equity portfolio companies.
+    related:
+      - Service Line
+
+  - term: EY Sustainability
+    definition: >-
+      EY's cross-cutting sustainability and climate practice covering
+      ESG strategy, sustainability reporting, decarbonization, and
+      nature-positive transformation.
+    related:
+      - Climate Action Barometer
+      - Nature Action Barometer
+
+research-surface:
+  - term: EY Insights
+    definition: >-
+      EY's research-publishing surface — "the insights you need to
+      make better decisions today, to shape the future with confidence"
+      — organized by topic area (AI, Finance, Geostrategy, People and
+      Workforce, Risk, Sustainability, Technology, EY Transformation)
+      and shipped through articles, recurring report series, podcasts,
+      and webcasts.
+    related:
+      - Insight Topic
+      - Report Series
+
+  - term: Insight Topic
+    definition: >-
+      One of EY Insights' top-level topic surfaces: AI, Finance / CFO
+      Agenda, Geostrategy, People and Workforce, Risk, Sustainability,
+      Technology, or EY Transformation.
+    related:
+      - EY Insights
+
+  - term: Report Series
+    definition: >-
+      A recurring branded EY publication produced on a regular cadence.
+      Flagship series include the CEO Outlook, EY Megatrends, Global
+      IPO Trends, the Private Equity Pulse, Work Reimagined, the
+      Climate Action Barometer, and the Nature Action Barometer.
+    related:
+      - EY Insights
+      - Insight Topic
+
+  - term: CEO Outlook
+    definition: >-
+      EY's recurring research on CEO priorities, growth outlook, and
+      strategic decisions — drawn from a global survey of chief
+      executives.
+    related:
+      - Report Series
+
+  - term: EY Megatrends
+    definition: >-
+      EY's long-horizon foresight report on the structural trends
+      reshaping business strategy.
+    related:
+      - Report Series
+
+  - term: Global IPO Trends
+    definition: >-
+      EY's quarterly analysis of global IPO activity, volumes, and
+      proceeds by region and sector.
+    related:
+      - Report Series
+
+  - term: Private Equity Pulse
+    definition: >-
+      EY's quarterly research on private equity dealmaking, fundraising,
+      and value creation.
+    related:
+      - Report Series
+
+  - term: Work Reimagined
+    definition: >-
+      EY's recurring workforce research on the impact of AI adoption,
+      flexibility, skills, and culture on the future of work.
+    related:
+      - Report Series
+      - People and Workforce Services
+
+  - term: Climate Action Barometer
+    definition: >-
+      EY's recurring assessment of corporate climate leadership and
+      decarbonization disclosure across the world's largest companies.
+    related:
+      - Report Series
+      - EY Sustainability
+
+  - term: Nature Action Barometer
+    definition: >-
+      EY's recurring assessment of corporate nature-positive reporting,
+      tracking how companies measure, manage, and disclose nature-related
+      impacts.
+    related:
+      - Report Series
+      - EY Sustainability
+
+  - term: EY Podcasts
+    definition: >-
+      EY's portfolio of subject-matter podcasts under brands such as
+      Better Finance, Sustainability Matters, and Tax Law Focus.
+    related:
+      - EY Insights
+
+  - term: EY Webcasts
+    definition: >-
+      EY's live and on-demand webcast program, used to distribute
+      research, tax alerts, and CPE-eligible content.
+    related:
+      - EY Insights
+
+ecosystem-and-blockchain:
+  - term: Alliance Partner
+    definition: >-
+      A strategic technology partner with whom EY co-delivers
+      implementation, integration, and managed-service offerings.
+      Named EY Ecosystem partners include Microsoft, NVIDIA, IBM,
+      SAP, ServiceNow, AWS, Google Cloud, Oracle, and Salesforce.
+    related:
+      - EY Ecosystems
+      - EY.ai
+
+  - term: EYQ
+    definition: >-
+      EY's internal generative-AI assistant exposed to EY professionals
+      as the firm-wide chat interface backed by the EY.ai platform.
+    related:
+      - EY.ai
+
+  - term: EY Blockchain
+    definition: >-
+      EY's blockchain practice and open-source program, anchored at
+      blockchain.ey.com and at github.com/EYBlockchain. Focuses on
+      zero-knowledge cryptography, privacy-preserving public-chain
+      transactions, supply chain traceability, ESG / emissions
+      tracking, and tokenization for financial institutions.
+    related:
+      - Nightfall
+      - Starlight
+      - EY Blockchain Analyzer
+      - EY OpsChain Suite
+
+  - term: Nightfall
+    definition: >-
+      EY's optimistic zero-knowledge rollup protocol for
+      privacy-preserving transactions on Ethereum and other public
+      chains. Nightfall_3 is the JavaScript implementation; Nightfall_4
+      is the Rust reimplementation, with a Community Edition
+      (nightfall_4_CE) released publicly. Deployed across Polygon,
+      Starknet, COTI, Celo, and Plume.
+    related:
+      - EY Blockchain
+      - Zero Knowledge Rollup
+
+  - term: Starlight
+    definition: >-
+      EY's open-source Solidity-to-zApp transpiler that converts a
+      conventional smart contract into a privacy-preserving zApp using
+      zero-knowledge proofs. Contributed to the public domain.
+    related:
+      - EY Blockchain
+      - Nightfall
+
+  - term: EY Blockchain Analyzer
+    definition: >-
+      EY's auditing tool family for blockchain and cryptocurrency
+      services. Includes the Reconciler (audit-grade transaction
+      reconciliation) and the Smart Contract & Token Review
+      (AI-enhanced vulnerability detection for smart contracts).
+    related:
+      - EY Blockchain
+      - Assurance
+
+  - term: EY OpsChain Suite
+    definition: >-
+      EY's blockchain product family for enterprise operations,
+      including OpsChain Traceability (supply chain), OpsChain ESG
+      (emissions tracking and ESG reporting), and OpsChain Contract
+      Manager (private business agreements).
+    related:
+      - EY Blockchain
+
+distribution-and-engagement:
+  - term: Newsroom
+    definition: >-
+      EY's media-relations surface for press releases and corporate
+      announcements. EY does not publish a public, developer-consumable
+      RSS index at the global level; distribution is via the newsroom
+      page and email subscription.
+    related:
+      - EY Insights
+
+  - term: Open Source Program
+    definition: >-
+      EY's publicly discoverable open-source footprint is concentrated
+      in the EYBlockchain GitHub organization (~28 repositories, ~160
+      followers, website blockchain.ey.com). No general-purpose
+      developer SDKs, CLIs, or REST APIs are published outside this
+      blockchain-focused program.
+    related:
+      - EY Blockchain
+      - GitHub Organization
