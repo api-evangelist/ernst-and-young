@@ -80,6 +80,8 @@ modified: '2026-05-23'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/ernst-and-young-domain-security.yml
   - type: Website
     url: https://www.ey.com/en_gl
   - type: About
