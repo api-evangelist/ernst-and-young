@@ -92,6 +92,13 @@ modified: '2026-05-23'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: IssueTracker
+    url: https://github.com/EYBlockchain/nightfall_3/issues
+  - type: Releases
+    url: https://github.com/EYBlockchain/nightfall_3/releases
+  - type: License
+    name: CC0-1.0
+    url: https://github.com/EYBlockchain/nightfall_3/blob/master/LICENSE
   - type: DomainSecurity
     url: security/ernst-and-young-domain-security.yml
   - type: Website
