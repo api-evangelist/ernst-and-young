@@ -48,6 +48,19 @@ description: >-
   Contract & Token Review) and the EY OpsChain Suite (Traceability,
   ESG, Contract Manager).
 kind: company
+deliveryModel:
+  model: saas
+  license: CC0-1.0
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
